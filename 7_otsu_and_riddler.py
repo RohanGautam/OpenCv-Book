@@ -30,6 +30,6 @@ t_img[t_img > T] = 255
 t_img[t_img < 255] = 0
 t_img = cv2.bitwise_not(t_img)
 cv2.imshow("Riddler-calvard", t_img)
-
+ 
 cv2.imshow("Riddler mask", cv2.bitwise_and(image, t_img))
 cv2.waitKey(0)

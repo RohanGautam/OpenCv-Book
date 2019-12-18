@@ -1,6 +1,6 @@
 # Run : python 7_adaptive_thresholding.py -i coins.png
 import numpy as np
-import argparse
+import argparse 
 import cv2
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True, help="Path to the image")

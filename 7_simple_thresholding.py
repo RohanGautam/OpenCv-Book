@@ -14,7 +14,7 @@ image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blurred = cv2.GaussianBlur(image, (5, 5), 0)
 cv2.imshow("Image", image)
 '''Simple thresholding: preovide a threshold value `T`. Below T ->0, above ->255'''
-threshold = 155
+threshold = 155 
 T, t_img = cv2.threshold(image, threshold, 255, cv2.THRESH_BINARY)
 cv2.imshow("Threshold binary", t_img)
 T, t_img_inv = cv2.threshold(image, threshold, 255, cv2.THRESH_BINARY_INV)
